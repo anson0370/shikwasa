@@ -329,7 +329,7 @@ class Player {
 
   seek(time) {
     if (!this.seekable) return
-    time = parseInt(time)
+    time = parseFloat(time)
     if (isNaN(time)) {
       console.error('Shikwasa: seeking time is NaN')
     }
