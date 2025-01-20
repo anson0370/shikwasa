@@ -188,6 +188,7 @@ class Player {
         })
       })
       this.audio.preload = this.options.preload
+      this.audio.playbackRate = this.options.initSpeed
       this.muted = this.options.muted
       this.update(this.options.audio)
     }
